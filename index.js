@@ -22,7 +22,7 @@ function viewCart() {
   // write your code here
 
   if (cart.length) {
-    var cartContents = "In your cart, you have "
+    var cartContents = `In your cart, you have ${cart[itemTitle]}`
     
     } else {
       var emptyCartStatement = "Your shopping cart is empty"
