@@ -9,9 +9,9 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
+function addToCart(itemName) {
  // item is a string, name of whatever item
- var itemTitle = `${item}`;
+ var itemTitle = `${itemName}`;
  
  var itemCost = Math.floor(Math.random() *Math.ceil(1) * Math.floor(100));
  var cartAddObject = cart.push({itemName: itemTitle, itemPrice: itemCost});
