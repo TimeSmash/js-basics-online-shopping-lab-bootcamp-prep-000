@@ -9,22 +9,60 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
- // write your code here
+function addToCart(itemName) {
+ // item is a string, name of whatever item
+ 
+ var itemPrice = Math.floor(Math.random() *Math.ceil(1) * Math.floor(100));
+ var itemObject = {itemName: itemName, itemPrice: itemPrice};
+ var cartAddObject = cart.push(itemObject);
+ cartAddObject;
+ return `${itemName} has been added to your cart.`;
 }
 
 function viewCart() {
-  // write your code here
+  //needs to loop over every item in cart, returning contents like "itemName at itemPrice"
+//how to access key in object?
+  if (cart.length) {
+    var cartContents = `In your cart, you have `;
+      if (cart.length === 1) {
+      return cartContents + `${cart.itemName} at ${cart.itemPrice}`;
+      } 
+        else if (cart.length === 2) {
+        var filler = "bla"
+        } else {
+          //code for more than 2 items goes here
+        }
+  }
+  else {
+    for (var i = 0; i < cart.length; i++) {
+  cart[i] = "" + cart[i]
+    }
+    var emptyCartStatement = "Your shopping cart is empty"
+    }
 }
 
 function total() {
-  // write your code here
-}
+  //needs to take all itemPrice values in objects in cart and add them
+  // [1,2,3,4,5]
+  // something like might work tomorrow
+  while (cart.length) {
+  }
+  for (var i = cart.length; i === 0; i--){
+  // take 1 out and retain, next take 2 out and add to 1
+  
+    
+  }
+  }
+  return totalPrice;
 
 function removeFromCart(item) {
-  // write your code here
+  cart
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  if (cardNumber) {
+    
+  }
+  else{
+  }
 }
