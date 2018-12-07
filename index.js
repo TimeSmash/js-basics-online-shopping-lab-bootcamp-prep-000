@@ -56,6 +56,7 @@ function total() {
 }
 
 function removeFromCart(item) {
+<<<<<<< HEAD
   for(var i = 0; i < getCart().length; i++){
     if(getCart()[i].itemName === item){
       return getCart().splice(i,1);
@@ -63,6 +64,16 @@ function removeFromCart(item) {
   }
   var notInCart = "That item is not in your cart.";
   return notInCart;
+=======
+  for(var i = 0; i < getCart().length - 1; i++){
+    if(getCart()[i].itemName === item){
+      getCart().splice(i,1);
+    }   else {
+        var notInCart = "That item is not in your cart.";
+        return notInCart;
+        }
+  }
+>>>>>>> c0ce0381f6f215db4b1c1590d839a1378efafad4
 }
 
 
